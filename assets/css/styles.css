@@ -1,0 +1,15 @@
+body {
+    background-image: url("../images/background.png");
+}
+
+.navbar {
+    background-color: #4aaaa5;
+}
+
+#navigation {
+    color: #ffffff;
+}
+
+#navigation:hover {
+    font-size: 1.3em;
+}
