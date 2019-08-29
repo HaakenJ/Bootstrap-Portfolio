@@ -49,7 +49,8 @@
                                     <input class="ml-2" type="radio" name="rps" id="userChoice" value="paper"> Paper
                                     <input class="ml-2" type="radio" name="rps" id="userChoice" value="scissors"> Scissors
                                 </div>
-                                <button type="button" onclick="winLoseTie(choiceFunction(),randomNumber())" class="btn btn-info float-left ml-5">Submit</button> <!-- Changed type to 'button' because 'Submit' refreshes the page and removes any javascript DOM changes. -->
+                                <!-- Changed type to 'button' because 'Submit' refreshes the page and removes any javascript DOM changes. -->
+                                <button type="button" onclick="winLoseTie(choiceFunction(),randomNumber()); count()" class="btn btn-info float-left ml-5">Go!</button> 
                             </form>
                                 
                             <div class="form-group">
@@ -62,8 +63,12 @@
                                 <input type="text" class="form-control" id="result" style="border-radius: 4px;" readonly>
                             </div>
                             
-                            <div id="numberOfGames" class="mt-2 mb-2">Number of Games: </div>
-                            <div id="score" class="mb-5">Score: </div>
+                            <div class="mt-2 mb-2">Number of Games:  <span id="count">0</span></div>
+                            <div class="mb-2">Wins:  <span id="wins">0</span></div>
+                            <div class="mb-2">Losses:  <span id="losses">0</span></div>
+                            <div class="mb-4">Ties:  <span id="ties">0</span></div>
+
+                            <button type="button" onclick="window.location.reload();" class="btn btn-info ml-5 mb-4">Start Over</button> 
                         </div>
                     </div>
             </div>
