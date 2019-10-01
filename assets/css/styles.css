@@ -38,3 +38,20 @@ textarea {
     position: absolute;
     bottom: 20;
 }
+
+@media screen and (min-width: 765px) {
+    .img-fluid {
+        height: 160px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .img-fluid {
+        height: 225px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .img-fluid {
+        height: 260px;
+    }
+}
+
