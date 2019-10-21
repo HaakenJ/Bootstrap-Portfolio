@@ -7,12 +7,12 @@ html {
     height: 100%;
 }
 
-#navigation {
+.navigation {
     color: #ffffff;
     transition: .2s;
 }
 
-#navigation:hover {
+.navigation:hover {
     color: #137d8d;
 }
 
@@ -37,4 +37,9 @@ textarea {
 .img-text {
     position: absolute;
     bottom: 20;
+}
+
+#portfolio-content {
+    position: absolute;
+    left: -1000px;
 }
