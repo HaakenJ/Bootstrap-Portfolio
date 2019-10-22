@@ -1,6 +1,7 @@
 body {
     background-image: url("../images/background.png");
     height: 100%;
+    overflow-x: hidden;
 }
 
 html {
@@ -40,20 +41,62 @@ textarea {
 }
 
 #portfolio-content {
-    position: absolute;
-    left: -1000px;
+    position: relative;
+    left: -5000px;
+    top: -360px;
 }
-@media screen and (min-width: 765px) {
+
+#contact-content {
+    position: relative;
+    left: -5000px;
+    top: -1125px;
+}
+
+@media only screen and (max-width: 1199px) {
+    #portfolio-content {
+        position: relative;
+        left: -5000px;
+        top: -390px;
+    }
+
+    #contact-content {
+        position: relative;
+        left: -5000px;
+        top: -1075px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #portfolio-content,
+    #contact-content {
+        position: relative;
+        left: -5000px;
+        top: -490px;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+    #portfolio-content,
+    #contact-content {
+        position: relative;
+        left: -5000px;
+        top: -945px;
+    }
+}
+
+@media only screen and (min-width: 765px) {
     .img-fluid {
         height: 160px;
     }
 }
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .img-fluid {
         height: 225px;
     }
 }
-@media screen and (min-width: 1200px) {
+
+
+@media only screen and (min-width: 1200px) {
     .img-fluid {
         height: 260px;
     }
