@@ -28,3 +28,12 @@ function hideCards(idOne, idTwo) {
         duration: '300'
     })
 }
+
+function showInfo(infoId, delay) {
+    anime({
+        targets: infoId,
+        height: ['0px', '400px'],
+        delay: delay,
+        easing: 'easeInOutQuad'
+    })
+}

@@ -54,7 +54,7 @@ textarea {
 
 [id*='-card'] {
     height: 400px;
-    width: 100%;
+    width: 220px;
     border-radius: 5px;
 }
 
@@ -73,17 +73,23 @@ textarea {
 #light-snow-card {
     background-color: rgb(66, 179, 179);
 }
+
 #gif-wallet-card {
     background-color: #666666;
 }
+
 #train-times-card {
     background-color: rgb(67, 67, 199);
 }
 
 .portfolio-info {
     display: none;
-    height: 0;
+    height: 0px;
+    width: 600px;
+    border-radius: 5px;
     background-color: chartreuse;
+    position: absolute;
+    right: 60px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -101,6 +107,7 @@ textarea {
 }
 
 @media only screen and (max-width: 991px) {
+
     #portfolio-content,
     #contact-content {
         position: relative;
@@ -110,6 +117,7 @@ textarea {
 }
 
 @media only screen and (max-width: 764px) {
+
     #portfolio-content,
     #contact-content {
         position: relative;
@@ -123,6 +131,7 @@ textarea {
         height: 160px;
     }
 }
+
 @media only screen and (min-width: 992px) {
     .img-fluid {
         height: 225px;
@@ -135,4 +144,3 @@ textarea {
         height: 260px;
     }
 }
-

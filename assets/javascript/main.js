@@ -50,15 +50,18 @@ $('#contact-link').on('click', () => {
 
 $('#light-snow-card').on('click', () => {
     hideCards('#gif-wallet-card', '#train-times-card');
-    // $('#light-snow-info').show();
+    $('#light-snow-info').show();
+    showInfo('#light-snow-info', 200);
 })
 $('#gif-wallet-card').on('click', () => {
     hideCards('#light-snow-card', '#train-times-card');
     slideLeft('#gif-wallet-card', '-330px');
-    // $('#gif-wallet-info').show();
+    $('#gif-wallet-info').show();
+    showInfo('#gif-wallet-info', 750);
 })
 $('#train-times-card').on('click', () => {
     hideCards('#gif-wallet-card', '#light-snow-card');
     slideLeft('#train-times-card', '-660px');
-    // $('#train-times-info').show();
+    $('#train-times-info').show();
+    showInfo('#train-times-info', 800);
 })
