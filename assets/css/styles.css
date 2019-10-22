@@ -49,7 +49,41 @@ textarea {
 #contact-content {
     position: relative;
     left: -5000px;
-    top: -1125px;
+    top: -965px;
+}
+
+[id*='-card'] {
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-name {
+    position: relative;
+    top: 33%;
+}
+
+.portfolio-card:hover {
+    cursor: pointer;
+    transform: translateX(4px);
+    transform: translateY(4px);
+    opacity: 0.8;
+}
+
+#light-snow-card {
+    background-color: rgb(66, 179, 179);
+}
+#gif-wallet-card {
+    background-color: #666666;
+}
+#train-times-card {
+    background-color: rgb(67, 67, 199);
+}
+
+.portfolio-info {
+    display: none;
+    height: 0;
+    background-color: chartreuse;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -62,7 +96,7 @@ textarea {
     #contact-content {
         position: relative;
         left: -5000px;
-        top: -1075px;
+        top: -980px;
     }
 }
 
