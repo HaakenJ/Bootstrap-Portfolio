@@ -3,6 +3,16 @@ function swapActive(idFrom, idTo) {
     $('#' + idTo).addClass('active');
 }
 
+$(document).ready(() => {
+    $('.opening-content').css({'height': innerHeight, 'width': innerWidth});
+});
+
+// Opening page button.
+$('#open-button').on('click', () => {
+    slideUp('.opening-content');
+})
+
+// Navbar Clicks
 $('#portfolio-link').on('click', () => {
 
     $('[id*="card"]').show();
@@ -22,7 +32,6 @@ $('#portfolio-link').on('click', () => {
     }
 
 });
-
 $('#about-me-link').on('click', () => {
 
     if ($('#portfolio-link').hasClass('active')) {
@@ -35,7 +44,6 @@ $('#about-me-link').on('click', () => {
         swapActive('contact-link', 'about-me-link');
     }
 });
-
 $('#contact-link').on('click', () => {
     if ($('#about-me-link').hasClass('active')) {
         slideRight('#about-me-content', '5000px');
@@ -48,6 +56,38 @@ $('#contact-link').on('click', () => {
     }
 })
 
+
+// About Me Clicks.
+$('#skills').on('click', () => {
+    $('#background').removeClass('active');
+    $('#about-me').removeClass('active');
+    $('#skills').addClass('active');
+
+    hideInfo('#background-info');
+    hideInfo('#about-me-info');
+    showInfo('#skills-info');
+})
+$('#about-me').on('click', () => {
+    $('#background').removeClass('active');
+    $('#skills').removeClass('active');
+    $('#about-me').addClass('active');
+
+    hideInfo('#background-info');
+    hideInfo('#skills-info');
+    showInfo('#about-me-info');
+})
+$('#background').on('click', () => {
+    $('#skills').removeClass('active');
+    $('#about-me').removeClass('active');
+    $('#background').addClass('active');
+
+    hideInfo('#about-me-info');
+    hideInfo('#skills-info');
+    showInfo('#background-info');
+})
+
+
+// Portfolio clicks.
 $('#light-snow-card').on('click', () => {
     hideCards('#gif-wallet-card', '#train-times-card');
     $('#light-snow-info').show();

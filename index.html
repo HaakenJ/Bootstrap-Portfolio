@@ -10,73 +10,97 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <title>About Me</title>
+    <title>Kramer's Portfolio</title>
 </head>
 
-<body class="d-flex flex-column">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-        <h4 class="text-white mr-2">Kramer Johnson</h4>
-        <button class="navbar-toggler" class="navigation" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active" id="about-me-link">
-                    <a class="nav-link" class="navigation" href="#">About Me <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item" id="portfolio-link">
-                    <a class="nav-link" class="navigation" id="portfolio-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item" id="contact-link">
-                    <a class="nav-link" class="navigation" href="#">Contact</a>
-                </li>
-            </ul>
+    <div class="opening-content">
+        <div class="open-header text-center">
+            <img src="assets/images/avatar.svg" alt="Kramer's avatar.">
+            <h1 class="header">Kramer Johnson</h1>
+            <h3 class="sub-header">Full Stack Web Developer</h3>
+            <p><a href="mailto:kramerhjohnson@gmail.com">kramerhjohnson@gmail.com</a>
+                <a class="ml-4" href="https://github.com/HaakenJ">Github</a>
+                <a class="ml-4" href="https://www.linkedin.com/in/kramerhjohnson/">LinkedIn</a></p>
+            <button class="btn btn-lg button-outline" id="open-button">Welcome!</button>
         </div>
-    </nav>
+    </div>
+
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <h4 class="text-white mr-2">Kramer Johnson</h4>
+            <button class="navbar-toggler" class="navigation" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active" id="about-me-link">
+                        <a class="nav-link" class="navigation" href="#">About Me <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" id="portfolio-link">
+                        <a class="nav-link" class="navigation" id="portfolio-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item" id="contact-link">
+                        <a class="nav-link" class="navigation" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
 
-    <div class="container">
-        <div class="row">
-            <!-- About Me Content -->
-            <div class="bg-light text-dark mt-5 shadow" id="about-me-content">
-                <div class="col-12 ml-2">
-                    <h2 class="text-info">
-                        About Me
-                    </h2>
+        <div class="container">
+            <div class="row">
+                <!-- About Me Content -->
+                <div class="mt-5 p-5 shadow info-box" id="about-me-content">
                     <div class="row">
-                        <div class="col-sm-12 col-md-3">
-                            <img src="assets/images/aboutme.jpg" alt="A photo of Kramer in the snow" width="100%">
+                        <div class="col-sm-12 col-md-3 about-sidebar">
+                            <div class="about-selector active" id="skills">
+                                <h3>Skills</h3>
+                                <div id="skills-bar"></div>
+                            </div>
+                            <div class="about-selector" id="background">
+                                <h3 class="mt-3">Background</h3>
+                                <div id="background-bar"></div>
+                            </div>
+                            <div class="about-selector" id="about-me">
+                                <h3 class="mt-3">About Me</h3>
+                                <div id="about-me-bar"></div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-9">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur
-                                sint occaecat cupidatat non proident, sunt
-                                in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p>Dignissim convallis aenean et tortor at risus. Arcu bibendum at varius vel pharetra vel
-                                turpis nunc. Non pulvinar neque laoreet suspendisse
-                                interdum consectetur libero id faucibus. Lectus quam id leo in vitae turpis massa. At
-                                volutpat diam ut venenatis tellus. Id consectetur purus
-                                ut faucibus pulvinar. Massa tincidunt nunc pulvinar sapien et.</p>
-                            <p>Arcu ac tortor dignissim convallis aenean et tortor. Sit amet luctus venenatis lectus
-                                magna
-                                fringilla. Egestas pretium aenean pharetra magna.
-                                Facilisi morbi tempus iaculis urna id. Cursus turpis massa tincidunt dui ut ornare. </p>
+                        <div id="skills-info">
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Node.js</li>
+                                <li>jQuery</li>
+                                <li>Html and CSS</li>
+                                <li>Python</li>
+                                <li>Animations</li>
+                            </ul>
+                        </div>
+                        <div id="background-info">
+                            <p>
+                                <ul>
+                                    <li>Accountant</li>
+                                    <li>Teacher</li>
+                                    <li>Got some degrees</li>
+                                    <li>Bootcamp</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div id="about-me-info">
+                            <p>Hi I'm Kramer, Here is some info about me!</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Portfolio Content -->
-            <div class="bg-light text-dark mt-xl-5 shadow col-12 p-4 mb-5" id="portfolio-content">
+            <div class="mt-xl-5  shadow col-12 p-4 mb-5 info-box" id="portfolio-content">
                 <div class="row">
                     <h2 class="text-info">
                         Portfolio
@@ -158,7 +182,7 @@
             </div>
 
             <!-- Contact Content -->
-            <div class="container bg-light text-dark mt-5 shadow col-12" id="contact-content">
+            <div class="container mt-5 shadow col-12 info-boxs" id="contact-content">
                 <div class="row">
                     <div class="col-12 ml-2">
                         <h2 class="text-info">
@@ -190,30 +214,28 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
+
+        <footer id="sticky-footer" class="py-4 text-white-50 bg-dark">
+            <div class="container text-center">
+                <small>Copyright &copy; Kramer Johnson</small>
+            </div>
+        </footer>
     </div>
-
-
-
-
-    <div id="page-content"></div>
-    <footer id="sticky-footer" class="py-4 text-white-50 bg-dark">
-        <div class="container text-center">
-            <small>Copyright &copy; Kramer Johnson</small>
-        </div>
-    </footer>
     <!-- Anime.js -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <!-- Bootstrap js files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
     <!-- Animations -->
     <script src="assets/javascript/animations.js"></script>
     <!-- Main js File -->

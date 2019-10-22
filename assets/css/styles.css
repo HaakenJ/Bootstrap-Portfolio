@@ -1,12 +1,67 @@
+/* Main Content Rules */
 body {
-    background-image: url("../images/background.png");
-    height: 100%;
     overflow-x: hidden;
+    background-color: #3f3f3f;
 }
 
-html {
-    height: 100%;
+.opening-content {
+    background: rgb(51, 51, 51);
+    background: linear-gradient(0deg, rgba(51, 51, 51, 1) 0%, rgba(37, 37, 37, 1) 84%);
+    z-index: 1;
 }
+
+.open-header {
+    position: relative;
+    top: 15%;
+}
+
+.main-content {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.info-box {
+    background: rgb(37, 37, 37);
+    background: linear-gradient(0deg, rgba(37, 37, 37, 1) 0%, rgba(32, 32, 32, 1) 100%);
+    border-radius: 5px;
+    color: #e0e0e0;
+    width: 100%;
+    height: 500px;
+}
+
+/* Reuseable classes */
+
+.header {
+    color: #e0e0e0;
+}
+
+.sub-header {
+    color: #777777;
+}
+
+a {
+    color: #777777;
+}
+
+ul {
+    font-size: 2em;
+    list-style-type: circle;
+}
+
+.button-outline {
+    color: #999999;
+    border-color: #777777;
+    background: none;
+}
+
+.button-outline:hover {
+    color: #777777;
+}
+
+/* Header and Footer */
 
 .navigation {
     color: #ffffff;
@@ -23,9 +78,101 @@ html {
     border-top: 8px solid #17a2b8;
 }
 
-#page-content {
-    flex: 1 0 auto;
+/* About Me */
+
+.active-selector {}
+
+.about-selector:hover {
+    cursor: pointer;
+    transform: translateX(2px);
+    transform: translateY(2px);
 }
+
+#skills {
+    color: #0082aa;
+}
+
+#skills:hover {
+    background-color: #0082aa;
+    color: #e0e0e0;
+    border-radius: 3px;
+}
+
+.active#skills {
+    background-color: #0082aa;
+    color: #e0e0e0;
+    border-radius: 3px;
+}
+
+#skills-bar {
+    background-color: #0082aa;
+    width: 100%;
+    height: 3px;
+}
+
+#background {
+    color: #df9000;
+}
+
+#background:hover {
+    background-color: #df9000;
+    color: #e0e0e0;
+    border-radius: 3px;
+}
+
+.active#background {
+    background-color: #df9000;
+    color: #e0e0e0;
+    border-radius: 3px;
+}
+
+#background-bar {
+    background-color: #df9000;
+    width: 100%;
+    height: 3px;
+}
+
+#about-me {
+    color: #438d1c;
+}
+
+#about-me:hover {
+    background-color: #438d1c;
+    color: #e0e0e0;
+    border-radius: 3px;
+}
+
+.active#about-me {
+    background-color: #438d1c;
+    color: #e0e0e0;
+    border-radius: 3px;
+}
+
+#about-me-bar {
+    background-color: #438d1c;
+    width: 100%;
+    height: 3px;
+}
+
+
+
+#background-info,
+#about-me-info {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    #skills-info,
+    #background-info,
+    #about-me-info {
+        width: 65%;
+        height: 350px;
+        position: absolute;
+        left: 450px;
+    }
+}
+
+/* Contact */
 
 textarea {
     resize: none;
@@ -40,16 +187,18 @@ textarea {
     bottom: 20;
 }
 
-#portfolio-content {
-    position: relative;
-    left: -5000px;
-    top: -360px;
-}
-
 #contact-content {
     position: relative;
     left: -5000px;
     top: -965px;
+}
+
+/* Portfolio */
+
+#portfolio-content {
+    position: relative;
+    left: -5000px;
+    top: -360px;
 }
 
 [id*='-card'] {
@@ -71,15 +220,15 @@ textarea {
 }
 
 #light-snow-card {
-    background-color: rgb(66, 179, 179);
+    background-color: #0082aa;
 }
 
 #gif-wallet-card {
-    background-color: #666666;
+    background-color: #df9000;
 }
 
 #train-times-card {
-    background-color: rgb(67, 67, 199);
+    background-color: #438d1c;
 }
 
 .portfolio-info {
@@ -96,7 +245,7 @@ textarea {
     #portfolio-content {
         position: relative;
         left: -5000px;
-        top: -390px;
+        top: -460px;
     }
 
     #contact-content {
