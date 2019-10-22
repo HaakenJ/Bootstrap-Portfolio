@@ -51,7 +51,7 @@ function hideCards(idOne, idTwo) {
     })
 }
 
-function showInfo(infoId, delay) {
+function showInfoPortfolio(infoId, delay) {
     anime({
         targets: infoId,
         height: ['0px', '400px'],
