@@ -17,6 +17,23 @@ $('#open-button').on('click', () => {
 })
 
 // Navbar Clicks
+$('#main-header').on('click', () => {
+    $('#background').removeClass('active');
+    $('#about-me').removeClass('active');
+    $('#skills').addClass('active');
+    $('#skills-info').show();
+
+    if ($('#portfolio-link').hasClass('active')) {
+        slideLeft('#portfolio-content', '-5000px');
+        slideLeft('#about-me-content', '0px');
+        swapActive('portfolio-link', 'about-me-link');
+    } else if ($('#contact-link').hasClass('active')) {
+        slideLeft('#contact-content', '-5000px');
+        slideLeft('#about-me-content', '0px');
+        swapActive('contact-link', 'about-me-link');
+    }
+})
+
 $('#about-me-link').on('click', () => {
 
     $('#background').removeClass('active');

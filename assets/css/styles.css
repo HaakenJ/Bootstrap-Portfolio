@@ -72,6 +72,10 @@ ul {
     color: #0383aa;
 }
 
+#main-header:hover {
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 1199px) {
     

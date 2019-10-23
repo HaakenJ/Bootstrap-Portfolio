@@ -85,6 +85,11 @@
     border-radius: 5px;
 }
 
+.background-link {
+    font-size: 2em;
+    color: #0082aa;
+}
+
 @media only screen and (max-width: 1199px) {
 
     #skills-info,
@@ -191,6 +196,7 @@
         position: relative;
         top: 30px;
         right: -11px;
+        padding-right: 5px;
     }
 
     #about-me-text {
