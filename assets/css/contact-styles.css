@@ -1,7 +1,15 @@
 /* Contact */
 
+#contact-content {
+    height: 550px;
+}
+
 textarea {
     resize: none;
+}
+
+.form-group {
+    margin-right: 20px;
 }
 
 .img-container {
@@ -13,12 +21,23 @@ textarea {
     bottom: 20;
 }
 
+#contact-info {
+    background-color: #292929;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-links {
+    color: #0082aa;
+    display: inline;
+}
+
 @media only screen and (max-width: 1199px) {
 
     #contact-content {
         position: relative;
         left: -5000px;
-        top: -980px;
+        top: -1050px;
     }
 }
 
@@ -27,7 +46,7 @@ textarea {
     #contact-content {
         position: relative;
         left: -5000px;
-        top: -490px;
+        top: -1040px;
     }
 }
 
@@ -36,7 +55,7 @@ textarea {
     #contact-content {
         position: relative;
         left: -5000px;
-        top: -945px;
+        top: -1450px;
     }
 }
 

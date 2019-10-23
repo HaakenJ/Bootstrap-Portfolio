@@ -18,6 +18,9 @@ $('#open-button').on('click', () => {
 // Navbar Clicks
 $('#about-me-link').on('click', () => {
 
+    $('#background').removeClass('active');
+    $('#about-me').removeClass('active');
+    $('#skills').addClass('active');
     $('#skills-info').show();
 
     if ($('#portfolio-link').hasClass('active')) {
