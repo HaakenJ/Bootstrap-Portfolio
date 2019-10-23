@@ -4,13 +4,6 @@
     cursor: pointer;
 }
 
-[id*='-card'] {
-    height: 400px;
-    width: 220px;
-    border-radius: 6px;
-    border: 2px outset #444444;
-}
-
 .project-name {
     position: relative;
     top: 33%;
@@ -52,9 +45,14 @@
     height: 0px;
     width: 700px;
     border-radius: 5px;
-    background-color: chartreuse;
+    background-color: #292929;
     position: absolute;
     right: 60px;
+}
+
+.port-info-content {
+    display: none;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -80,25 +78,46 @@
     .portfolio-info {
         width: 380px;
     }
-}
 
-@media only screen and (max-width: 764px) {
-
-    #portfolio-content {
-        position: relative;
-        left: -5000px;
-        top: -945px;
+    [id*='-card'] {
+        height: 400px;
+        width: 220px;
+        border-radius: 6px;
+        border: 2px outset #444444;
     }
 }
 
-@media only screen and (min-width: 765px) {
+@media only screen and (max-width: 768px) {
 
+    body {
+        overflow-y: auto !important;
+    }
+
+    #portfolio-content {
+        top: -700px;
+        height: 700px;
+    }
+
+    .portfolio-info {
+        width: 96%;
+        top: 282px;
+        right: 12px;
+    }
+
+    [id*='-card'] {
+        height: 200px;
+        width: 100%;
+        border-radius: 6px;
+        border: 2px outset #444444;
+        margin-bottom: 10px;
+    }
 }
 
-@media only screen and (min-width: 992px) {
-
+@media only screen and (max-width: 425px) {
+    .portfolio-info {
+        width: 93%;
+    }
 }
-
 
 @media only screen and (min-width: 1200px) {
 
@@ -106,5 +125,12 @@
         position: relative;
         left: -5000px;
         top: -545px;
+    }
+
+    [id*='-card'] {
+        height: 400px;
+        width: 220px;
+        border-radius: 6px;
+        border: 2px outset #444444;
     }
 }

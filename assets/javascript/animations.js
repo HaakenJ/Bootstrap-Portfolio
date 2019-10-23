@@ -38,6 +38,15 @@ function slideLeft(id, xTranslate) {
     })
 }
 
+function slideUpCards(id, yTranslate) {
+    anime({
+        targets: id,
+        translateY: yTranslate,
+        easing: 'easeInOutQuad',
+        duration: '800'
+    })
+}
+
 function hideCards(idOne, idTwo) {
     anime({
         targets: idOne,
@@ -57,7 +66,15 @@ function showInfoPortfolio(infoId, delay, height) {
         targets: infoId,
         height: ['0px', height],
         delay: delay,
-        easing: 'easeInOutQuad'
+        easing: 'easeInOutQuad',
+        complete: () => {
+            $(infoId + ' .port-info-content').show();
+            anime({
+                targets: infoId + ' .port-info-content',
+                opacity: ['0', '1'],
+                duration: 500
+            })
+        }
     })
 }
 

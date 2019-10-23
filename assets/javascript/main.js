@@ -16,6 +16,20 @@ $('#open-button').on('click', () => {
 })
 
 // Navbar Clicks
+$('#about-me-link').on('click', () => {
+
+    $('#skills-info').show();
+
+    if ($('#portfolio-link').hasClass('active')) {
+        slideLeft('#portfolio-content', '-5000px');
+        slideLeft('#about-me-content', '0px');
+        swapActive('portfolio-link', 'about-me-link');
+    } else if ($('#contact-link').hasClass('active')) {
+        slideLeft('#contact-content', '-5000px');
+        slideLeft('#about-me-content', '0px');
+        swapActive('contact-link', 'about-me-link');
+    }
+});
 $('#portfolio-link').on('click', () => {
 
     $('[id*="card"]').show();
@@ -35,18 +49,6 @@ $('#portfolio-link').on('click', () => {
     }
 
 });
-$('#about-me-link').on('click', () => {
-
-    if ($('#portfolio-link').hasClass('active')) {
-        slideLeft('#portfolio-content', '-5000px');
-        slideLeft('#about-me-content', '0px');
-        swapActive('portfolio-link', 'about-me-link');
-    } else if ($('#contact-link').hasClass('active')) {
-        slideLeft('#contact-content', '-5000px');
-        slideLeft('#about-me-content', '0px');
-        swapActive('contact-link', 'about-me-link');
-    }
-});
 $('#contact-link').on('click', () => {
     if ($('#about-me-link').hasClass('active')) {
         slideRight('#about-me-content', '5000px');
@@ -57,8 +59,8 @@ $('#contact-link').on('click', () => {
         slideRight('#contact-content', '5000px');
         swapActive('portfolio-link', 'contact-link');
     }
-})
-$('.navbar-nav>li>a').on('click', function(){
+});
+$('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });
 
@@ -97,12 +99,16 @@ $('#background').on('click', () => {
 $('.portfolio-header').on('click', () => {
     $('[id*="card"]').show();
     $('[id*="card"]').css('opacity', '1');
-    // $('[id*="card"]').css('transform', 'none');
     $('[id*="info"]').hide();
-    slideRight('#gif-wallet-card', 0);
-    slideRight('#train-times-card', 0);
-})
+    if ($('#portfolio-content').css('top') === '-700px') {
+        slideUpCards('#gif-wallet-card', 0);
+        slideUpCards('#train-times-card', 0);
+    } else {
+        slideRight('#gif-wallet-card', 0);
+        slideRight('#train-times-card', 0);
+    }
 
+})
 $('#light-snow-card').on('click', () => {
     hideCards('#gif-wallet-card', '#train-times-card');
     $('#light-snow-info').show();
@@ -112,16 +118,24 @@ $('#gif-wallet-card').on('click', () => {
     hideCards('#light-snow-card', '#train-times-card');
     // Switch statement used as media query.
     switch ($('#portfolio-content').css('top')) {
+        // Above 1200px
         case '-545px':
             slideLeft('#gif-wallet-card', '-350px');
             showInfoPortfolio('#gif-wallet-info', 750, '398px');
             break;
+            // Max 1199px
         case '-460px':
             slideLeft('#gif-wallet-card', '-330px');
             showInfoPortfolio('#gif-wallet-info', 750, '398px');
             break;
+            // Max 991px
         case '-490px':
             slideLeft('#gif-wallet-card', '-225px');
+            showInfoPortfolio('#gif-wallet-info', 750, '398px');
+            break;
+            // Max 768px
+        case '-700px':
+            slideUpCards('#gif-wallet-card', '-213px');
             showInfoPortfolio('#gif-wallet-info', 750, '398px');
             break;
     }
@@ -133,16 +147,24 @@ $('#train-times-card').on('click', () => {
     hideCards('#gif-wallet-card', '#light-snow-card');
     // Switch statement used as media query.
     switch ($('#portfolio-content').css('top')) {
+        // Above 1200px
         case '-545px':
             slideLeft('#train-times-card', '-720px');
             showInfoPortfolio('#train-times-info', 800, '398px');
             break;
+            // Max 1199px
         case '-460px':
             slideLeft('#train-times-card', '-637px');
             showInfoPortfolio('#train-times-info', 800, '398px');
             break;
+            // Max 991px
         case '-490px':
             slideLeft('#train-times-card', '-450px');
+            showInfoPortfolio('#train-times-info', 750, '398px');
+            break;
+            // Max 768px
+        case '-700px':
+            slideUpCards('#train-times-card', '-420px');
             showInfoPortfolio('#train-times-info', 750, '398px');
             break;
 
