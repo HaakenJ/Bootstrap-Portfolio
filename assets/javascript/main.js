@@ -94,6 +94,15 @@ $('#background').on('click', () => {
 
 
 // Portfolio clicks.
+$('.portfolio-header').on('click', () => {
+    $('[id*="card"]').show();
+    $('[id*="card"]').css('opacity', '1');
+    // $('[id*="card"]').css('transform', 'none');
+    $('[id*="info"]').hide();
+    slideRight('#gif-wallet-card', 0);
+    slideRight('#train-times-card', 0);
+})
+
 $('#light-snow-card').on('click', () => {
     hideCards('#gif-wallet-card', '#train-times-card');
     $('#light-snow-info').show();
@@ -112,7 +121,7 @@ $('#gif-wallet-card').on('click', () => {
             showInfoPortfolio('#gif-wallet-info', 750, '398px');
             break;
         case '-490px':
-            slideLeft('#gif-wallet-card', '-200px');
+            slideLeft('#gif-wallet-card', '-225px');
             showInfoPortfolio('#gif-wallet-info', 750, '398px');
             break;
     }
@@ -133,7 +142,7 @@ $('#train-times-card').on('click', () => {
             showInfoPortfolio('#train-times-info', 800, '398px');
             break;
         case '-490px':
-            slideLeft('#train-times-card', '-430px');
+            slideLeft('#train-times-card', '-450px');
             showInfoPortfolio('#train-times-info', 750, '398px');
             break;
 

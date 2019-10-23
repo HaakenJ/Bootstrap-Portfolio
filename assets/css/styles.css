@@ -1,6 +1,7 @@
 /* Main Content Rules */
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
     background: rgb(37, 37, 37);
 }
 
@@ -70,12 +71,6 @@ ul {
     color: #0383aa;
 }
 
-#sticky-footer {
-    flex-shrink: none;
-    background-color: #666666;
-    border-top: 8px solid #17a2b8;
-}
-
 
 @media only screen and (max-width: 1199px) {
     
@@ -113,7 +108,6 @@ ul {
 @media only screen and (min-width: 992px) {
 
 }
-
 
 @media only screen and (min-width: 1200px) {
 

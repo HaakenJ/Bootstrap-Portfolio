@@ -1,5 +1,9 @@
 /* Portfolio */
 
+.portfolio-header:hover {
+    cursor: pointer;
+}
+
 [id*='-card'] {
     height: 400px;
     width: 220px;
@@ -74,7 +78,7 @@
     }
 
     .portfolio-info {
-        width: 355px;
+        width: 380px;
     }
 }
 
