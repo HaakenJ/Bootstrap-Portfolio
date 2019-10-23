@@ -2,7 +2,7 @@
 body {
     overflow-x: hidden;
     overflow-y: hidden;
-    background: rgb(37, 37, 37);
+    background-image: url('../images/background.png');
     font-family: 'Nunito Sans', sans-serif;
 }
 

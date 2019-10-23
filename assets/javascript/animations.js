@@ -51,12 +51,18 @@ function hideCards(idOne, idTwo) {
     anime({
         targets: idOne,
         opacity: 0,
-        duration: '300'
+        duration: '300',
+        complete: () => {
+            $(idOne).hide();
+        }
     })
     anime({
         targets: idTwo,
         opacity: 0,
-        duration: '300'
+        duration: '300',
+        complete: () => {
+            $(idTwo).hide();
+        }
     })
 }
 

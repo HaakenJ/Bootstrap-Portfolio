@@ -88,6 +88,7 @@
 .background-link {
     font-size: 2em;
     color: #0082aa;
+    margin-left: 25px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -196,7 +197,12 @@
         position: relative;
         top: 30px;
         right: -11px;
-        padding-right: 5px;
+        padding-right: 25px;
+    }
+
+    #background-info,
+    #about-me-info {
+        padding-left: 30px;
     }
 
     #about-me-text {
@@ -215,11 +221,15 @@
 
 @media only screen and (max-width: 500px) {
     #about-me-content {
-        height: 900px;
+        height: 1100px;
     }
-    #about-me-info,
+
     #background-info {
         height: 650px;
+        text-align: left;
+    }
+    #about-me-info {
+        height: 800px;
     }
     #tech-header {
         font-size: 0.8em;

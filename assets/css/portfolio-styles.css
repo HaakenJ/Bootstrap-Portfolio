@@ -72,6 +72,72 @@
         border-radius: 6px;
         border: 2px outset #444444;
     }
+
+    #light-snow-card {
+        position: absolute;
+        left: 30px;
+    }
+
+    #gif-wallet-card {
+        position: absolute;
+        left: 355px;
+    }
+
+    #train-times-card {
+        position: absolute;
+        left: 675px;
+    }
+
+    #light-snow-img {
+        height: auto;
+        width: 360px;
+        position: relative;
+        top: -15px;
+        right: -190px;
+    }
+
+    #gif-wallet-img {
+        height: auto;
+        width: 315px;
+        position: relative;
+        top: -10px;
+        right: -235px;
+    }
+
+    #train-times-img {
+        height: auto;
+        width: 240px;
+        position: relative;
+        top: -10px;
+        right: -275px;
+    }
+
+    .repo-link {
+        position: absolute;
+        top: 200px;
+        left: 30px;
+    }
+
+    .site-link {
+        position: absolute;
+        top: 275px;
+        left: 30px;
+    }
+
+    .snow-link {
+        color: #0082aa;
+        border-color: #0082aa;
+    }
+
+    .gif-link {
+        color: #df9000;
+        border-color: #df9000;
+    }
+
+    .train-link {
+        color: #438d1c;
+        border-color: #438d1c;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -91,6 +157,37 @@
         width: 220px;
         border-radius: 6px;
         border: 2px outset #444444;
+    }
+
+    #light-snow-card {
+        left: 10px;
+    }
+
+    #gif-wallet-card {
+        left: 235px;
+    }
+
+    #train-times-card {
+        left: 460px;
+    }
+
+    #light-snow-img,
+    #gif-wallet-img,
+    #train-times-img {
+        display: none;
+    }
+
+    .repo-link,
+    .site-link {
+        font-size: 1em;
+    }
+
+    .repo-link {
+        top: 240px;
+    }
+
+    .site-link {
+        top: 310px;
     }
 }
 
@@ -119,10 +216,12 @@
         margin-bottom: 10px;
     }
 }
+
 @media only screen and (max-width: 500px) {
     #portfolio-content {
-        top: -900px;
+        top: -1100px;
     }
+}
 
 @media only screen and (max-width: 425px) {
     .portfolio-info {
@@ -143,5 +242,69 @@
         width: 220px;
         border-radius: 6px;
         border: 2px outset #444444;
+    }
+
+    #light-snow-card {
+        position: absolute;
+        left: 80px;
+    }
+
+    #gif-wallet-card {
+        position: absolute;
+        left: 444px;
+    }
+
+    #train-times-card {
+        position: absolute;
+        left: 820px;
+    }
+
+    #light-snow-img {
+        height: auto;
+        width: 400px;
+        position: relative;
+        right: -282px;
+    }
+
+    #gif-wallet-img {
+        height: auto;
+        width: 335px;
+        position: relative;
+        right: -300px;
+    }
+
+    #train-times-img {
+        height: auto;
+        width: 255px;
+        position: relative;
+        top: -25px;
+        right: -335px;
+    }
+
+    .repo-link {
+        position: absolute;
+        top: 200px;
+        left: 30px;
+    }
+
+    .site-link {
+        position: absolute;
+        top: 275px;
+        left: 30px;
+    }
+
+    .snow-link {
+        color: #0082aa;
+        border-color: #0082aa;
+    }
+
+    .gif-link {
+        color: #df9000;
+        border-color: #df9000;
+    }
+
+    .train-link {
+        color: #438d1c;
+        border-color: #438d1c;
     }
 }
