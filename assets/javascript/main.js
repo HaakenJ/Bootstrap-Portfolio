@@ -131,11 +131,13 @@ $('.portfolio-header').on('click', () => {
 
 })
 $('#light-snow-card').on('click', () => {
+    $('#light-snow-info .port-info-content').hide();
     hideCards('#gif-wallet-card', '#train-times-card');
     $('#light-snow-info').show();
     showInfoPortfolio('#light-snow-info', 200, '398px');
 })
 $('#gif-wallet-card').on('click', () => {
+    $('#gif-wallet-info .port-info-content').hide();
     hideCards('#light-snow-card', '#train-times-card');
     // Switch statement used as media query.
     switch ($('#portfolio-content').css('top')) {
@@ -169,6 +171,7 @@ $('#gif-wallet-card').on('click', () => {
 
 })
 $('#train-times-card').on('click', () => {
+    $('#train-times-info .port-info-content').hide();
     hideCards('#gif-wallet-card', '#light-snow-card');
     // Switch statement used as media query.
     switch ($('#portfolio-content').css('top')) {
