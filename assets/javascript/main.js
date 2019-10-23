@@ -10,6 +10,7 @@ $(document).ready(() => {
     });
 });
 
+
 // Opening page button.
 $('#open-button').on('click', () => {
     slideUp('.opening-content');
@@ -103,7 +104,7 @@ $('.portfolio-header').on('click', () => {
     $('[id*="card"]').show();
     $('[id*="card"]').css('opacity', '1');
     $('[id*="info"]').hide();
-    if ($('#portfolio-content').css('top') === '-700px') {
+    if ($('#portfolio-content').css('top') === '-700px' || $('#portfolio-content').css('top') === '-900px') {
         slideUpCards('#gif-wallet-card', 0);
         slideUpCards('#train-times-card', 0);
     } else {
@@ -141,6 +142,10 @@ $('#gif-wallet-card').on('click', () => {
             slideUpCards('#gif-wallet-card', '-213px');
             showInfoPortfolio('#gif-wallet-info', 750, '398px');
             break;
+        // Max 500px
+        case '-900px':
+            slideUpCards('#gif-wallet-card', '-213px');
+            showInfoPortfolio('#gif-wallet-info', 750, '398px');
     }
 
     $('#gif-wallet-info').show();
@@ -170,6 +175,10 @@ $('#train-times-card').on('click', () => {
             slideUpCards('#train-times-card', '-420px');
             showInfoPortfolio('#train-times-info', 750, '398px');
             break;
+        // Max 500px
+        case '-900px':
+            slideUpCards('#train-times-card', '-420px');
+            showInfoPortfolio('#train-times-info', 750, '398px');
 
     }
 

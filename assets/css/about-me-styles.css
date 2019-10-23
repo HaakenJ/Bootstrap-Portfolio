@@ -80,6 +80,7 @@
 #skills-info,
 #background-info,
 #about-me-info {
+    padding-top: 20px;
     background-color: #292929;
     border-radius: 5px;
 }
@@ -91,7 +92,15 @@
     #about-me-info {
         width: 75%;
         height: 420px;
+    }
+
+    #skills-info,
+    #background-info {
         padding-left: 50px;
+    }
+
+    #about-me-info {
+        padding-left: 10px;
     }
 
     .about-selector h3 {
@@ -100,6 +109,34 @@
 
     [id*='info'] {
         font-size: 1em;
+    }
+
+    .skills-img {
+        height: auto;
+        width: 320px;
+        border-radius: 5px;
+        position: relative;
+        top: -320px;
+        right: -43%;
+    }
+    
+    #about-me-text {
+        font-size: .92em;
+        width: 60%;
+    }
+
+    .about-me-img-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -400px;
+        right: -410px;
+    }
+
+    .about-me-img {
+        height: auto;
+        width: 235px;
+        border-radius: 5px;
     }
 }
 
@@ -114,10 +151,33 @@
     #about-me-info {
         font-size: .75em;
     }
+
+    .skills-img {
+        height: auto;
+        width: 230px;
+        border-radius: 5px;
+        position: relative;
+        top: -245px;
+        right: -43%;
+    }
+
+    .about-me-img-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -290px;
+        right: -300px;
+    }
+
+    .about-me-img {
+        height: auto;
+        width: 165px;
+        border-radius: 5px;
+    }
 }
 
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 767px) {
+
     #about-me-content {
         height: 700px;
     }
@@ -132,7 +192,34 @@
         top: 30px;
         right: -11px;
     }
+
+    #about-me-text {
+        font-size: 1.2em;
+        width: 98%;
+    }
+
+    .skills-img {
+        display: none;
+    }
+
+    .about-me-img {
+        display: none;
+    }
 }
+
+@media only screen and (max-width: 500px) {
+    #about-me-content {
+        height: 900px;
+    }
+    #about-me-info,
+    #background-info {
+        height: 650px;
+    }
+    #tech-header {
+        font-size: 0.8em;
+    }
+}
+
 
 @media only screen and (min-width: 1200px) {
 
@@ -142,5 +229,33 @@
         width: 75%;
         height: 420px;
         padding-left: 50px;
+    }
+
+    .skills-img {
+        height: auto;
+        width: 320px;
+        border-radius: 5px;
+        position: relative;
+        top: -320px;
+        right: -50%;
+    }
+
+    #about-me-text {
+        font-size: 1em;
+        width: 60%;
+    }
+
+    .about-me-img-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -405px;
+        right: -500px;
+    }
+
+    .about-me-img {
+        height: auto;
+        width: 235px;
+        border-radius: 5px;
     }
 }

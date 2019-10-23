@@ -50,12 +50,22 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 764px) {
+@media only screen and (max-width: 767px) {
 
     #contact-content {
         position: relative;
         left: -5000px;
         top: -1450px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #contact-content {
+        position: relative;
+        left: -5000px;
+        top: -1660px;
+        height: 650px;
     }
 }
 

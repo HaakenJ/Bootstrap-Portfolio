@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     background: rgb(37, 37, 37);
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .opening-content {
@@ -35,6 +36,7 @@ body {
 
 .header {
     color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sub-header {
@@ -100,13 +102,12 @@ ul {
 
 }
 
-@media only screen and (min-width: 765px) {
-
+@media only screen and (max-width: 500px) {
+    .open-header {
+        top: -2%;
+    }
 }
 
-@media only screen and (min-width: 992px) {
-
-}
 
 @media only screen and (min-width: 1200px) {
 
