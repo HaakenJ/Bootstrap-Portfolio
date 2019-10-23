@@ -4,7 +4,10 @@ function swapActive(idFrom, idTo) {
 }
 
 $(document).ready(() => {
-    $('.opening-content').css({'height': innerHeight, 'width': innerWidth});
+    $('.opening-content').css({
+        'height': innerHeight,
+        'width': innerWidth
+    });
 });
 
 // Opening page button.
@@ -55,6 +58,9 @@ $('#contact-link').on('click', () => {
         swapActive('portfolio-link', 'contact-link');
     }
 })
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 
 
 // About Me Clicks.
@@ -91,17 +97,48 @@ $('#background').on('click', () => {
 $('#light-snow-card').on('click', () => {
     hideCards('#gif-wallet-card', '#train-times-card');
     $('#light-snow-info').show();
-    showInfoPortfolio('#light-snow-info', 200);
+    showInfoPortfolio('#light-snow-info', 200, '398px');
 })
 $('#gif-wallet-card').on('click', () => {
     hideCards('#light-snow-card', '#train-times-card');
-    slideLeft('#gif-wallet-card', '-330px');
+    // Switch statement used as media query.
+    switch ($('#portfolio-content').css('top')) {
+        case '-545px':
+            slideLeft('#gif-wallet-card', '-350px');
+            showInfoPortfolio('#gif-wallet-info', 750, '398px');
+            break;
+        case '-460px':
+            slideLeft('#gif-wallet-card', '-330px');
+            showInfoPortfolio('#gif-wallet-info', 750, '398px');
+            break;
+        case '-490px':
+            slideLeft('#gif-wallet-card', '-200px');
+            showInfoPortfolio('#gif-wallet-info', 750, '398px');
+            break;
+    }
+
     $('#gif-wallet-info').show();
-    showInfoPortfolio('#gif-wallet-info', 750);
+
 })
 $('#train-times-card').on('click', () => {
     hideCards('#gif-wallet-card', '#light-snow-card');
-    slideLeft('#train-times-card', '-660px');
+    // Switch statement used as media query.
+    switch ($('#portfolio-content').css('top')) {
+        case '-545px':
+            slideLeft('#train-times-card', '-720px');
+            showInfoPortfolio('#train-times-info', 800, '398px');
+            break;
+        case '-460px':
+            slideLeft('#train-times-card', '-637px');
+            showInfoPortfolio('#train-times-info', 800, '398px');
+            break;
+        case '-490px':
+            slideLeft('#train-times-card', '-430px');
+            showInfoPortfolio('#train-times-info', 750, '398px');
+            break;
+
+    }
+
     $('#train-times-info').show();
-    showInfoPortfolio('#train-times-info', 800);
+
 })

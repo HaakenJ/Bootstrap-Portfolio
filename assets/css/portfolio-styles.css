@@ -1,0 +1,106 @@
+/* Portfolio */
+
+[id*='-card'] {
+    height: 400px;
+    width: 220px;
+    border-radius: 6px;
+    border: 2px outset #444444;
+}
+
+.project-name {
+    position: relative;
+    top: 33%;
+}
+
+.portfolio-card:hover {
+    cursor: pointer;
+}
+
+#light-snow-card {
+    background-color: #0082aa;
+}
+
+#light-snow-card:hover {
+    background: rgb(84, 169, 196);
+    background: linear-gradient(0deg, rgba(84, 169, 196, 1) 0%, rgba(0, 130, 170, 1) 59%);
+}
+
+#gif-wallet-card {
+    background-color: #df9000;
+}
+
+#gif-wallet-card:hover {
+    background: rgb(238, 188, 95);
+    background: linear-gradient(0deg, rgba(238, 188, 95, 1) 0%, rgba(223, 144, 0, 1) 59%);
+}
+
+#train-times-card {
+    background-color: #438d1c;
+}
+
+#train-times-card:hover {
+    background: rgb(125, 179, 96);
+    background: linear-gradient(0deg, rgba(125, 179, 96, 1) 0%, rgba(67, 141, 28, 1) 59%);
+}
+
+.portfolio-info {
+    display: none;
+    height: 0px;
+    width: 700px;
+    border-radius: 5px;
+    background-color: chartreuse;
+    position: absolute;
+    right: 60px;
+}
+
+@media only screen and (max-width: 1199px) {
+    #portfolio-content {
+        position: relative;
+        left: -5000px;
+        top: -460px;
+    }
+
+    .portfolio-info {
+        width: 580px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    #portfolio-content {
+        position: relative;
+        left: -5000px;
+        top: -490px;
+    }
+
+    .portfolio-info {
+        width: 355px;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+
+    #portfolio-content {
+        position: relative;
+        left: -5000px;
+        top: -945px;
+    }
+}
+
+@media only screen and (min-width: 765px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    #portfolio-content {
+        position: relative;
+        left: -5000px;
+        top: -545px;
+    }
+}

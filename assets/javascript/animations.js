@@ -25,7 +25,7 @@ function slideRight(id, xTranslate) {
         targets: id,
         translateX: xTranslate,
         easing: 'easeInOutQuad',
-        duration: '1000',
+        duration: '800',
     })
 }
 
@@ -34,7 +34,7 @@ function slideLeft(id, xTranslate) {
         targets: id,
         translateX: xTranslate,
         easing: 'easeInOutQuad',
-        duration: '1000',
+        duration: '800',
     })
 }
 
@@ -51,10 +51,10 @@ function hideCards(idOne, idTwo) {
     })
 }
 
-function showInfoPortfolio(infoId, delay) {
+function showInfoPortfolio(infoId, delay, height) {
     anime({
         targets: infoId,
-        height: ['0px', '400px'],
+        height: ['0px', height],
         delay: delay,
         easing: 'easeInOutQuad'
     })

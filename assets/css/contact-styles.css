@@ -1,0 +1,51 @@
+/* Contact */
+
+textarea {
+    resize: none;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 20;
+}
+
+@media only screen and (max-width: 1199px) {
+
+    #contact-content {
+        position: relative;
+        left: -5000px;
+        top: -980px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    #contact-content {
+        position: relative;
+        left: -5000px;
+        top: -490px;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+
+    #contact-content {
+        position: relative;
+        left: -5000px;
+        top: -945px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    #contact-content {
+        position: relative;
+        left: -5000px;
+        top: -1100px;
+    }
+}
