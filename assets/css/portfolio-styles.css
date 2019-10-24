@@ -215,17 +215,67 @@
         border: 2px outset #444444;
         margin-bottom: 10px;
     }
+
+    #light-snow-card {
+        position: absolute;
+        left: 0;
+    }
+
+    #gif-wallet-card {
+        position: absolute;
+        top: 280px;
+        left: 0;
+    }
+
+    #train-times-card {
+        position: absolute;
+        top: 490px;
+        left: 0;
+    }
+
+    #light-snow-img,
+    #gif-wallet-img,
+    #train-times-img {
+        display: none;
+    }
+
+    .repo-link,
+    .site-link {
+        font-size: 1em;
+    }
+
+    .repo-link {
+        top: 240px;
+    }
+
+    .site-link {
+        top: 310px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     #portfolio-content {
         top: -1100px;
+        height: 800px;
+    }
+
+    .portfolio-info {
+        font-size: 0.85em;
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
+    #portfolio-content {
+        top: -1110px;
+    }
     .portfolio-info {
         width: 93%;
+    }
+    .repo-link {
+        top: 340px;
+    }
+    .site-link {
+        top: 415px;
     }
 }
 

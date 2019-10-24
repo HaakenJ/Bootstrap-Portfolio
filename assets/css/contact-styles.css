@@ -21,10 +21,12 @@ textarea {
     bottom: 20;
 }
 
-#contact-info {
+#contact-box {
     background-color: #292929;
     border-radius: 5px;
     padding: 10px;
+    margin-right: 20px;
+    text-align: center;
 }
 
 .contact-links {
@@ -64,8 +66,8 @@ textarea {
     #contact-content {
         position: relative;
         left: -5000px;
-        top: -1660px;
-        height: 650px;
+        top: -1950px;
+        height: 600px;
     }
 }
 
