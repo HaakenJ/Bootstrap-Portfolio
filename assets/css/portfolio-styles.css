@@ -2,6 +2,7 @@
 
 .portfolio-header:hover {
     cursor: pointer;
+    color: #292929;
 }
 
 .project-name {
